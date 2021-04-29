@@ -1,0 +1,45 @@
+Billing Question:
+
+Write a program logic to print the number of billing cycles between two user given dates.
+ Billing cycles start every 20th of the month and ends every 19th of the month. Also, write all the test cases that you have used.
+
+Sample Input:-
+
+1.Start date: 02-04-2018 end date: 25-04-2018
+
+2.Start date: 02-04-2018 end date: 25-05-2018
+
+3.Start date: 02-04-2018 end date: 12-04-2018
+
+
+
+Test Cases:
+
+Regular billing period is 20-04-2018 to 19-04-2018, 20-05-2018 to 19-05-2018, 20-06-2018 to 19-06-2018, ... ... ...
+
+
+
+1.Start date: 02-04-2018 end date: 25-04-2018
+
+For the First month to make a billing period. -
+  When customer register start date (02-04-2018) and end date (25-04-2018) before than 19-04-2018 (billing day 19),
+   I want to make a period as 02-04-2018 to 19-04-2018.
+ 
+For the Last month to make a billing period. - 
+  When customer end registration is 25-04-2018 after billing day (19-04-2018), I want to make a period as 20-04-2018 to 25-04-2018.
+
+
+2.Start date: 02-04-2018 end date: 25-05-2018
+
+For the First month to make a billing period. -
+  When customer register start date (02-04-2018) and end date (25-05-2018) before than 19-04-2018 (billing day 19),
+   I want to make a period as 02-04-2018 to 19-04-2018.
+ 
+For the Last month to make a billing period. - 
+  When customer end registration is 25-05-2018 after billing day (19-05-2018), I want to make a period as 20-05-2018 to 25-05-2018.
+  
+ 3.Start date: 02-04-2018 end date: 12-04-2018 
+For the First month to make a billing period. -
+  When customer register start date (02-04-2018) and end date (12-04-2018 ) both are before than 19-04-2018 (billing day 19),
+    
+ So the period is 02-04-2018 to 12-04-2018
