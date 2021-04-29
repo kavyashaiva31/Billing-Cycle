@@ -1,8 +1,5 @@
 <?php
 
-$a =  readline('Enter the Start date in DD-MM-YYYY format: ');
-$b =  readline('Enter the End date in DD-MM-YYYY format: ');
-$date = strtotime($a);($b);
 function dateRange($firstDate, $lastDate, $step = '+1 day', $format = 'd-m-Y', $period='20' ){
         $dates = array();
 
@@ -73,6 +70,9 @@ function dateRange($firstDate, $lastDate, $step = '+1 day', $format = 'd-m-Y', $
         return $dates;
 }
 
+$a =  readline('Enter the Start date in DD-MM-YYYY format: ');
+$b =  readline('Enter the End date in DD-MM-YYYY format: ');
+$date = strtotime($a);($b);
 $dates = dateRange($a, $b, "+1 month", "d-m-Y", '20');//increase by one month
 print_r($dates);
 
