@@ -1,7 +1,7 @@
 <?php
 
-$a =  readline('Enter the Start date: ');
-$b =  readline('Enter the End date: ');
+$a =  readline('Enter the Start date in DD-MM-YYYY format: ');
+$b =  readline('Enter the End date in DD-MM-YYYY format: ');
 $date = strtotime($a);($b);
 function dateRange($firstDate, $lastDate, $step = '+1 day', $format = 'd-m-Y', $period='20' ){
         $dates = array();
